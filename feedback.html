@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Share your experience with Ornava through our customer feedback form." />
+  <title>Feedback | Ornava</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="feedback.html">
+  <div class="site-shell">
+    <div data-site-header></div>
+    <main class="site-main">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow">Feedback</p>
+          <h1>Tell us about your Ornava experience.</h1>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container content-grid">
+          <div class="contact-card">
+            <h2>Feedback Form</h2>
+            <form class="feedback-form" data-feedback-form data-form-type="feedback">
+              <input class="field" type="text" name="name" placeholder="Full name" required />
+              <input class="field" type="email" name="email" placeholder="Email address" required />
+              <div>
+                <label>Rating</label>
+                <div class="rating-stars" data-rating-stars>
+                  <button type="button" data-star="1">1</button>
+                  <button type="button" data-star="2">2</button>
+                  <button type="button" data-star="3">3</button>
+                  <button type="button" data-star="4">4</button>
+                  <button type="button" data-star="5">5</button>
+                </div>
+                <input type="hidden" name="rating" value="0" data-rating-value />
+              </div>
+              <textarea class="textarea" name="message" placeholder="Share your feedback" required></textarea>
+              <button class="btn" type="submit">Submit Feedback</button>
+            </form>
+            <p class="status-text" data-form-success></p>
+          </div>
+          <div class="panel-card">
+            <h2>Why feedback matters</h2>
+            <p>We use customer feedback to improve the shopping experience, refine product listings, and strengthen support policies across the Ornava storefront.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div data-newsletter></div>
+    <div data-site-footer></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
